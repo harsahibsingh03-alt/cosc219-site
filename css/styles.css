@@ -1,0 +1,97 @@
+:root {
+    --brand: #1b7f5a;
+    --ink: #12181f;
+    --muted: #6b7885;
+    --space: 1rem;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--ink);
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
+main {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: var(--space);
+}
+header,
+footer {
+    padding: var(--space);
+    text-align: center;
+}
+
+nav a {
+    color: var(--brand);
+    margin: 0 var(--space);
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+nav a:focus,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: 3px solid var(--brand);
+}
+
+section {
+    margin-bottom: var(--space);
+}
+
+form {
+    border: 1px solid var(--muted);
+    border-radius: 8px;
+    padding: var(--space);
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.25rem;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--muted);
+    border-radius: 4px;
+}
+
+fieldset {
+    margin-bottom: var(--space);
+    border: 1px solid var(--muted);
+    border-radius: 4px;
+    padding: var(--space);
+}
+
+legend {
+    color: var(--brand);
+}
+
+button {
+    background: var(--brand);
+    color: white;
+    border: 1px solid var(--brand);
+    border-radius: 4px;
+    padding: 0.6rem var(--space);
+}
+
+.card {
+    padding: var(--space);
+    border: 1px solid var(--muted);
+}
+footer {
+    color: var(--ink);
+}
